@@ -14,7 +14,8 @@ try {
         linea = sr.ReadLine();
     }
     sr.Close();
+    Console.ReadKey();
 } catch (Exception ex) {
 
-
+    Console.WriteLine("Ha ocurrido un error" + ex.Message);
 }
