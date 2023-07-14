@@ -1,11 +1,11 @@
 ﻿//Crear archivos TXT y realizar operaciones
-
+/*
 using System.IO;
 
 string texto;
 
 try {
-    StreamReader sr = new StreamReader("miArchivo.txt");
+    StreamReader sr = new StreamReader("C:\\Users\\leoo9\\source\\repos\\Archivos\\miArchivo.txt");
     var linea = sr.ReadLine();
 
     while (linea != null)
@@ -18,4 +18,5 @@ try {
 } catch (Exception ex) {
 
     Console.WriteLine("Ha ocurrido un error" + ex.Message);
-}
+*/
+
