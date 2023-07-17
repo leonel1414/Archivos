@@ -48,12 +48,32 @@ Console.WriteLine(json);
 //Situaciones inesperada -> no deseada -> "error"
 
 Console.WriteLine($"1 entre 2: {DivisionSegura(1,2)}");
-try {
+try
+{
     Console.WriteLine($"1 entre 0: {DivisionSegura(1, 0)}");
 }
 catch (Exception ex)
 {
     Console.WriteLine($"Ha ocurrido este Error: {ex.Message}");
+}
+finally {
+    Console.WriteLine("Es correcto el valor que aparece?");
+    //logica para que el usuario verifique si el valor es correcto;
+}
+
+//continuamos con el programa si capturamos la excepcion (catch)
+Console.WriteLine($"1 entre 3: {DivisionSegura(1, 3)}"); //comprobamos que funciona
+
+int[] arr = new int[3];
+arr[0] = 1;
+arr[1] = 2;
+arr[2] = 3;
+Console.WriteLine(arr[3]);
+
+try {
+Console.WriteLine(arr[3]);
+} catch(Exception ex) {
+Console.WriteLine(ex.Message);     
 }
 
 
