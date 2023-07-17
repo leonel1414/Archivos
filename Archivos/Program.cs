@@ -86,3 +86,16 @@ static double DivisionSegura(double a, double b) {
     return a / b;
 }
 
+
+/*Tipos
+ *Exception -> clase base de las Excepciones
+ *IndexOutOfRangeException -> Se intento pedir un elemento que no existe en un array, etc..
+ *NullReferenceException -> Se pidio un objeto null. 
+    object obj = null;
+    obj.ToString();
+ *ArgumentException -> clase base para Excepciones relacionadas con argumentos.
+ *ArgumentNullException
+    string str = null;
+    str.Substring(0,2);
+
+ */
